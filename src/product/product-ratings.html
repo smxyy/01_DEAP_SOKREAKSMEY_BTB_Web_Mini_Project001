@@ -50,7 +50,7 @@
           </div>
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-900 md:p-0 md:dark:text-gray-500" aria-current="page">Shop <i class="fa-solid fa-angle-down ps-1 text-center"></i> </a>
+              <a href="../shop/shop.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-900 md:p-0 md:dark:text-gray-500" aria-current="page">Shop <i class="fa-solid fa-angle-down ps-1 text-center"></i> </a>
             </li>
             <li>
               <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">On Sale</a>
@@ -70,10 +70,10 @@
             </svg>
             <span class="sr-only">Search for products...</span>
           </button>
-          <div class="relative">
+          <a href="../cart/cart.html" class="relative">
             <img class="w-[22px] object-contain" src="../../assets/images/cart.png" alt="Cart icon">
             <span class="text-sm absolute -top-4 -right-2 md:-top-[1.2rem] md:-right-2.5 bg-black px-1.5 py-0 md:px-2 md:py-[1px] text-white rounded-full">3</span>
-          </div>
+          </a>
           <img class="w-[24px] object-contain" src="../../assets/images/user.png" alt="User icon">
         </div>
       </div>
@@ -188,13 +188,13 @@
       </section>
 
       <!-- Rating & Reviews -->
-      <section class="pt-7">
+      <section class="pt-7 px-6">
         <div class="flex items-center mb-6 sm:mb-8 overflow-x-auto">
           <button class="inline-flex items-center justify-center whitespace-nowrap text-sm cursor-pointer hover:bg-slate-100 h-9 border-black/10 border-b text-black/60 font-normal p-5 sm:p-6 rounded-none flex-1">Product Details</button>
           <button class="inline-flex items-center justify-center whitespace-nowrap text-sm cursor-pointer hover:bg-slate-100 h-9 border-b-2 border-black text-black font-medium p-5 sm:p-6 rounded-none flex-1">Rating &amp; Reviews</button>
           <button class="inline-flex items-center justify-center whitespace-nowrap text-sm cursor-pointer hover:bg-slate-100 h-9 border-b border-black/10 text-black/60 font-normal p-5 sm:p-6 rounded-none flex-1">FAQs</button>
         </div>
-        <div>
+        <div class="grid grid-cols-1 gap-7">
           <!-- Title -->
           <div class="flex justify-between">
             <div class="flex gap-3 items-center">
@@ -217,7 +217,7 @@
                 <input type="checkbox" id="dropdown" class="peer hidden" />
               
                 <!-- Button -->
-                <label for="dropdown" class="px-6 py-3 bg-gray-100 rounded-full flex items-center space-x-2 cursor-pointer">
+                <label for="dropdown" class="px-6 py-3 bg-[#F0EEED] rounded-full flex items-center space-x-2 cursor-pointer focus:border-sky-500 focus:outline-2 focus:outline-sky-500">
                   <span>Latest</span>
                   <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
@@ -225,7 +225,7 @@
                 </label>
               
                 <!-- Dropdown Menu -->
-                <div class="absolute mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:block hidden">
+                <div class="absolute mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:block hidden">
                   <ul class="py-1 text-gray-700">
                     <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Latest</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Most Relevant</a></li>
@@ -238,14 +238,188 @@
               </button>              
             </div>
           </div>
-          <div></div>
+          <!-- Reviews -->
+          <div class="pt-3 flex flex-col justify-center items-center gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <!-- review cart Alex K. -->
+              <div class="flex flex-col gap-5 p-5 border-[1px] border-black/10 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  </p>
+                  <button class="p-2 hover:bg-slate-50 cursor-pointer rounded-md">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-black/40 text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="256" cy="256" r="48"></circle>
+                      <circle cx="416" cy="256" r="48"></circle>
+                      <circle cx="96" cy="256" r="48"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="flex gap-2">
+                  <span class="font-bold text-xl">Alex K.</span>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#01AB31] text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                  </svg>
+                </p>
+                <p class="text-black/60 font-light">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+                <p class="font-medium text-sm text-black/60">Posted on August 14, 2023</p>
+              </div>
+
+              <!-- review cart Sarah M. -->
+              <div class="flex flex-col gap-5 p-5 border-[1px] border-black/10 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  </p>
+                  <button class="p-2 hover:bg-slate-50 cursor-pointer rounded-md">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-black/40 text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="256" cy="256" r="48"></circle>
+                      <circle cx="416" cy="256" r="48"></circle>
+                      <circle cx="96" cy="256" r="48"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="flex gap-2">
+                  <span class="font-bold text-xl">Sarah M.</span>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#01AB31] text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                  </svg>
+                </p>
+                <p class="text-black/60 font-light">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                <p class="font-medium text-sm text-black/60">Posted on August 15, 2023</p>
+              </div>
+
+              <!-- review cart Ehtan R. -->
+              <div class="flex flex-col gap-5 p-5 border-[1px] border-black/10 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  </p>
+                  <button class="p-2 hover:bg-slate-50 cursor-pointer rounded-md">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-black/40 text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="256" cy="256" r="48"></circle>
+                      <circle cx="416" cy="256" r="48"></circle>
+                      <circle cx="96" cy="256" r="48"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="flex gap-2">
+                  <span class="font-bold text-xl">Ethan R.</span>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#01AB31] text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                  </svg>
+                </p>
+                <p class="text-black/60 font-light">"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</p>
+                <p class="font-medium text-sm text-black/60">Posted on August 16, 2023</p>
+              </div>    
+              
+              <!-- review cart Olivia P. -->
+              <div class="flex flex-col gap-5 p-5 border-[1px] border-black/10 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  </p>
+                  <button class="p-2 hover:bg-slate-50 cursor-pointer rounded-md">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-black/40 text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="256" cy="256" r="48"></circle>
+                      <circle cx="416" cy="256" r="48"></circle>
+                      <circle cx="96" cy="256" r="48"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="flex gap-2">
+                  <span class="font-bold text-xl">Olivia P.</span>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#01AB31] text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                  </svg>
+                </p>
+                <p class="text-black/60 font-light">"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</p>
+                <p class="font-medium text-sm text-black/60">Posted on August 17, 2023</p>
+              </div>
+
+              <!-- review cart Liam K. -->
+              <div class="flex flex-col gap-5 p-5 border-[1px] border-black/10 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  </p>
+                  <button class="p-2 hover:bg-slate-50 cursor-pointer rounded-md">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-black/40 text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="256" cy="256" r="48"></circle>
+                      <circle cx="416" cy="256" r="48"></circle>
+                      <circle cx="96" cy="256" r="48"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="flex gap-2">
+                  <span class="font-bold text-xl">Liam K.</span>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#01AB31] text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                  </svg>
+                </p>
+                <p class="text-black/60 font-light">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
+                <p class="font-medium text-sm text-black/60">Posted on August 18, 2023</p>
+              </div>
+
+              <!-- review cart Samantha D. -->
+              <div class="flex flex-col gap-5 p-5 border-[1px] border-black/10 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  </p>
+                  <button class="p-2 hover:bg-slate-50 cursor-pointer rounded-md">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-black/40 text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="256" cy="256" r="48"></circle>
+                      <circle cx="416" cy="256" r="48"></circle>
+                      <circle cx="96" cy="256" r="48"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="flex gap-2">
+                  <span class="font-bold text-xl">Samantha D.</span>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#01AB31] text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                  </svg>
+                </p>
+                <p class="text-black/60 font-light">"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                <p class="font-medium text-sm text-black/60">Posted on August 19, 2023</p>
+              </div>
+            </div>
+            <button class="inline-flex gap-3 items-center justify-center whitespace-nowrap text-black hover:text-white text-sm lg:text-lg font-normal shadow cursor-pointer hover:bg-black px-10 py-4 bg-transparent border-[1px] border-black/10 rounded-full">
+              Load More Reviews
+            </button>   
+          </div>
         </div>
       </section>
 
       <!-- You might also like -->
       <section>
         <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase text-center pb-5">You might also like</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-5 px-5 mx-auto w-fit">
 
           <!-- Polo with Constrast Trims -->
           <div class="p-2 grid grid-cols-1 gap-2 w-fit">
@@ -268,7 +442,7 @@
                     <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
                     <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
                   </div>
-                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
                 </div>
              </div>
           </div>
@@ -342,7 +516,7 @@
                     <span class="font-bold text-black text-sm xl:text-2xl">$105</span>
                     <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$150</span>
                   </div>
-                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
                 </div>
              </div>
           </div>       

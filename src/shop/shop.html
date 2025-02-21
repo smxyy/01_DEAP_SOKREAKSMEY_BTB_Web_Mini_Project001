@@ -14,8 +14,6 @@
       pointer-events: all;
       width: 24px;
       height: 24px;
-      /* -webkit-appearance: none; */
-      /* @apply w-6 h-6 appearance-none pointer-events-auto; */
       }
     </style>    
 </head>
@@ -59,7 +57,7 @@
           </div>
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-900 md:p-0 md:dark:text-gray-500" aria-current="page">Shop <i class="fa-solid fa-angle-down ps-1 text-center"></i> </a>
+              <a href="../shop/shop.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-900 md:p-0 md:dark:text-gray-500" aria-current="page">Shop <i class="fa-solid fa-angle-down ps-1 text-center"></i> </a>
             </li>
             <li>
               <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">On Sale</a>
@@ -79,10 +77,10 @@
             </svg>
             <span class="sr-only">Search for products...</span>
           </button>
-          <div class="relative">
+          <a href="../cart/cart.html" class="relative">
             <img class="w-[22px] object-contain" src="../../assets/images/cart.png" alt="Cart icon">
             <span class="text-sm absolute -top-4 -right-2 md:-top-[1.2rem] md:-right-2.5 bg-black px-1.5 py-0 md:px-2 md:py-[1px] text-white rounded-full">3</span>
-          </div>
+          </a>
           <img class="w-[24px] object-contain" src="../../assets/images/user.png" alt="User icon">
         </div>
       </div>
@@ -92,7 +90,7 @@
     <div class="max-w-screen-xl flex flex-col flex-wrap justify-between mx-auto py-4 gap-10 px-4 lg:px-0">
       <hr class="text-black/10 border-[1px]">
       <nav>
-        <ol class="flex gap-2 px-5 lg:px-2">
+        <ol class="flex gap-2 px-5 xl:px-2">
           <li class="text-black opacity-50"><a href="/src/index.html">Home</a></li>
           <li><i class="fa-solid fa-angle-right text-black opacity-50"></i></li>
           <li class="ps-3">Shop</li>
@@ -342,14 +340,27 @@
              <!-- Gradient Graphic T-shirt -->
             <div class="p-2 grid grid-cols-1 gap-2">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/gradient-tshirt.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/gradient-tshirt.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
               <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>
 
             <!-- Polo T-shirt -->
@@ -357,103 +368,199 @@
               <!-- image -->
               <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/polo.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Polo with Tipping Details</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Tipping Details</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>
 
             <!-- Black Striped T-shirt -->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/black-striped.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/black-striped.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>            
 
             <!-- Skinny Fit Jeans -->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/skinny-jit-jeans.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/skinny-jit-jeans.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>  
             
             <!-- Chechered T-shirt -->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/chechered-shirt.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/chechered-shirt.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>            
 
             <!-- Sleeve T-shirt -->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/sleeve-striped.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/sleeve-striped.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>
 
             <!-- Courage Graphic T-shirt -->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/courage-graphic.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/courage-graphic.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>
 
             <!-- Loose Fit Jeans-->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/loose-fit.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/loose-fit.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>
 
             <!-- Faded Skinny Jeans -->
             <div class="p-2 grid grid-cols-1 gap-2 w-fit">
               <!-- image -->
-              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px]"><img src="../../assets/images/faded-skinny.png" class="block object-cover rounded-2xl w-full h-[230px] md:h-[250px] xl:h-[270px]" alt="Gradient Graphic T-shirt">
+              <div class="w-[200px] md:w-[220px] lg:w-[230px] xl:w-[250px] bg-[#F0EEED] rounded-2xl cursor-pointer"><img src="../../assets/images/faded-skinny.png" class="block object-cover w-full h-[230px] md:h-[250px] xl:h-[270px] hover:scale-110 transition-all duration-500" alt="Gradient Graphic T-shirt">
               </div>
-              <!-- desc -->
-               <div class="flex flex-col gap-1 justify-center mt-1">
-                  <p class="text-base md:text-lg lg:text-xl">Gradient Graphic T-shirt</p>
-                  <p>stars <span class="pl-3"> rating</span></p>
-                  <p>$USD</p>
-               </div>
+              <div class="flex flex-col gap-1 justify-center mt-1">
+                <p class="text-base md:text-lg lg:text-xl font-bold tracking-wide">Polo with Constrast Trims</p>
+                <p>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-solid fa-star text-amber-400 text-lg lg:text-xl"></i>
+                  <i class="fa-regular fa-star text-amber-400 text-lg lg:text-xl pe-2"></i>
+                  4.0<span class="text-black/50">/5</span>
+                </p>
+                <div class="grid grid-cols-1 md:flex md:items-center md:space-x-[5px] xl:space-x-2.5">
+                  <div class="flex gap-2 order-2 md:order-1">
+                    <span class="font-bold text-black text-sm xl:text-2xl">$194</span>
+                    <span class="font-bold text-black/40 line-through text-sm xl:text-2xl">$242</span>
+                  </div>
+                  <span class="my-1 md:my-0 order-1 md:order-2 font-medium text-[10px] xl:text-xs py-1.5 px-7 md:px-3.5 rounded-full w-fit bg-[#FF3333]/10 text-[#FF3333]">-20%</span>
+                </div>
+             </div>
             </div>
 
           </div>
